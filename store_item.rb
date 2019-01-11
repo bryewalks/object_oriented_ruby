@@ -1,58 +1,41 @@
+module Store_name
+
 class Store_Item
 
-attr_reader :price, :color, :weight
-attr_writer :price
+  attr_reader :price, :color, :weight
+  attr_writer :price
 
 
-def initialize(name_input, price_input, color_input, weight_input)
+  def initialize(input_options)
+    @price = input_options[:price]
+    @color = input_options[:color]
+    @item = input_options[:item]
+  end
 
-  @price = price_input
-  @color = color_input
-  @weight = weight_input
+  def print_info
+
+    p "#{@price} #{@color} #{@item}"
+
+  end
 
 end
-
-
-def print_info
-
-  p "#{@price} #{@color} #{@weight}"
-
-end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 end
 
 
 
 
-football = Store_Item.new("football", 10, "brown", 1)
-basketball = Store_Item.new(8, "orange", 2)
-football = Store_Item.new(12, "white", 3)
 
-football.print_info
+# p ball_1
+
+# basketball = Store_Item.new(
+#                             item: "basketball",
+#                             price: 8,
+#                             color: "orange")
+
+# football = Store_Item.new(item: "soccerball"12, "white", 3)
+
+# football.print_info
 
 
 
