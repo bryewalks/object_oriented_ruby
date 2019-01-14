@@ -1,1 +1,0 @@
-json.fortune "You will have a blessed day"

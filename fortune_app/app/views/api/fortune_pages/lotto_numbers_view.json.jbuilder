@@ -1,2 +1,0 @@
-json.formatted_numbers @formatted_numbers
-json.lotto_numbers @lotto_numbers
