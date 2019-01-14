@@ -1,0 +1,1 @@
+json.fortune "You will have a horrible week :("
